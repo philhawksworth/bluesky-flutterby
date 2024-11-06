@@ -1,0 +1,53 @@
+---
+templateEngine: [vto, md]
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flutterby — an animated icon for your Bluesky profile link</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header>
+    <hgroup>
+      <h1>FlutterBy</h1>
+      <p>an animated icon for your Bluesky profile link</p>
+    </hgroup>
+    {{ include "butterfly.vto" { username: "philhawksworth.dev", variant: "white" } }}
+  </header>
+  <main>
+    <div class="hero">
+      <a href="https://bsky.app/profile/philhawksworth.dev" class="bluesky-flutter white">
+      {{ include "butterfly-symbol.vto" }}
+      </a>
+    </div>
+    <section>
+      <h2>Get the HTML</h2>
+```html
+<a href="https://bsky.app/profile/{YOUR-BLUESKY-HANDLE}" class="bluesky-flutter">
+{{ include "butterfly-symbol.vto" }}
+</a>
+```
+      <h2>Get the CSS</h2>
+```css
+{{ include "sass/flutterby.scss" }}
+```
+
+    </section>
+  </main>
+  <footer>
+    <div class="legal">
+      <p>
+        The source code of this site is available on <a href="https://www.github.com/philhawksworth/flutterby">GitHub</a> 
+      </p>
+      <p>
+        Published under a <a href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0, International</a> licence.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

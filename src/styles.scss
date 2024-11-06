@@ -1,0 +1,102 @@
+
+@use "sass/flutterby.scss";
+@use "sass/code.scss";
+
+
+html {
+  animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    background:#159deb;
+    --theme-color: #159deb
+  }
+  50% {
+    background: #03aea5;
+    --theme-color: #159deb;
+  }
+}
+
+body {
+  margin: 0;
+  padding:0em;
+  line-height: 1.6;
+  font-size: 16px;  
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+header,
+footer,
+main {
+  padding: 5em;
+}
+
+a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration-color: #ffffff66;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  transition: 200ms;
+
+  &:hover {
+    text-decoration-color: #fff;
+    text-underline-offset: 0.4em;
+  }
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  h1, p {
+    margin:0;
+    padding:0;
+  }
+
+
+  h1 {
+    font-size: 2em;
+    font-weight:bolder;
+    line-height: 0.8;
+  }
+  p {
+    font-size: 0.9em;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+}
+
+
+a.white {
+  color: #fff;
+}
+
+.black {
+  background-color: #000;
+}
+
+.hero {
+  text-align: center;
+  margin: 3em auto;
+  svg {
+    width: 50vw;
+    height: 50vw;
+    max-width: 350px;
+    max-height: 350px;
+  }
+}
+
+
