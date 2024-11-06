@@ -4,6 +4,8 @@ An animated icon for your Bluesky profile link.
 
 https://flutterby.philhawksworth.dev
 
+![The flutter effect](flutter.gif)
+
 Add the HTML and CSS to your site to provide a subtly animated wing flap of the Bluesky logo. The animation is minimised for users who prefer reduced motion.
 
 ## Using the animated icon
