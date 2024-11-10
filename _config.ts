@@ -13,6 +13,9 @@ site.use(sass({"format": "compressed"}));
 site.use(prism());
 site.use(minifyHTML({options: { minify_css: false }}));
 
+// Static file pasthrough
+site.copy("_public", ".");
+
 
 
 export default site;
